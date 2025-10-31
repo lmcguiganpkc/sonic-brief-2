@@ -21,8 +21,9 @@ export default defineConfig({
     },
   },
   build: {
-    sourcemap: false,     // disables .map files
-    outDir: "dist",       // ensures output goes to dist
-    emptyOutDir: true     // clears old files before building
-  }
+  outDir: "../dist", // moves output to the root
+  sourcemap: false,
+  emptyOutDir: true
+}
+
 });
