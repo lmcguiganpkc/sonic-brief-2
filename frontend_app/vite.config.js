@@ -21,7 +21,7 @@ export default defineConfig({
     },
   },
   build: {
-  outDir: "../dist", // moves output to the root
+  outDir: "build", // moves output to the root
   sourcemap: false,
   emptyOutDir: true
 }

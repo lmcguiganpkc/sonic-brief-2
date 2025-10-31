@@ -36,7 +36,7 @@ jobs:
           npm run build
           
       - name: List contents of dist folder
-        run: ls -R dist
+        run: ls -R frontend_app/build
 
       - name: Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
@@ -53,7 +53,7 @@ jobs:
       - name: Confirm dist folder exists before deployment
         run: |
           echo "Checking contents of dist"
-          ls -R dist
+          ls -R frontend_app/build
 
       - name: Build And Deploy
         id: builddeploy
@@ -62,7 +62,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######          
-          app_artifact_location: "dist"      
+          app_artifact_location: "frontend_app/build"
           api_location: ""                    # Api source code path - optional          
           github_id_token: ${{ steps.idtoken.outputs.result }} 
           skip_app_build: true                 
