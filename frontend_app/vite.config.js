@@ -24,12 +24,7 @@ export default defineConfig({
 build: {
   outDir: "build",
   sourcemap: false,
-  emptyOutDir: true,
-  rollupOptions: {
-    output: {
-      manualChunks: undefined
+  emptyOutDir: true  
     }
   }
-}
-
-});
+);
