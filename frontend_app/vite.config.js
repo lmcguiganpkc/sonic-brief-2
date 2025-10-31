@@ -20,4 +20,9 @@ export default defineConfig({
       "@": resolve(__dirname, "./src"),
     },
   },
+  build: {
+    sourcemap: false,     // disables .map files
+    outDir: "dist",       // ensures output goes to dist
+    emptyOutDir: true     // clears old files before building
+  }
 });
