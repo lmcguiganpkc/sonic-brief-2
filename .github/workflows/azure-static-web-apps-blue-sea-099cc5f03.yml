@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies and build (frontend_app)
         working-directory: frontend_app
         run: |
-          npm install
+          npm install --legacy-peer-deps
           npm run build
 
       - name: Install OIDC Client from Core Package
