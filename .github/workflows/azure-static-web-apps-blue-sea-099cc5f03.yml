@@ -62,10 +62,11 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######       
-          app_location: "frontend_app"
+          app_artifact_location: "frontend_app/build"
           output_location: "build"
           api_location: ""                    # Api source code path - optional          
-          github_id_token: ${{ steps.idtoken.outputs.result }}                        
+          github_id_token: ${{ steps.idtoken.outputs.result }}  
+          skip_app_build: true                      
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
