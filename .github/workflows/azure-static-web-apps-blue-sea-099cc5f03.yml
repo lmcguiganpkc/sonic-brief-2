@@ -49,11 +49,11 @@ jobs:
             const coredemo = require('@actions/core')
             return await coredemo.getIDToken()
           result-encoding: string
-
+      
       - name: Confirm dist folder exists before deployment
         run: |
-            echo "Checking contents of frontend_app/dist"
-            ls -R frontend_app/dist
+          echo "Checking contents of dist"
+          ls -R dist
 
       - name: Build And Deploy
         id: builddeploy
