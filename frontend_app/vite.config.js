@@ -20,10 +20,16 @@ export default defineConfig({
       "@": resolve(__dirname, "./src"),
     },
   },
-  build: {
-  outDir: "build", // moves output to the root
+ 
+build: {
+  outDir: "build",
   sourcemap: false,
-  emptyOutDir: true
+  emptyOutDir: true,
+  rollupOptions: {
+    output: {
+      manualChunks: undefined
+    }
+  }
 }
 
 });
