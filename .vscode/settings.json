@@ -1,0 +1,10 @@
+{
+    "azureFunctions.deploySubpath": "az-func-audio",
+    "azureFunctions.scmDoBuildDuringDeployment": true,
+    "azureFunctions.pythonVenv": ".venv",
+    "azureFunctions.projectLanguage": "Python",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "appService.defaultWebAppToDeploy": "/subscriptions/ae99ec7a-92fc-4e2f-9f37-0ec0263072c9/resourceGroups/rg-sonicbrief-vsps-uks/providers/Microsoft.Web/sites/wa-sonicbrief-vsps-uks",
+    "appService.deploySubpath": "backend_app"
+}
