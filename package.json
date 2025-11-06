@@ -1,0 +1,21 @@
+{
+  "name": "sonic-brief-2",
+  "version": "1.0.0",
+  "description": "> [!WARNING]\r > This Solutions Accelerator is in early stages and is subjected to changes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmcguiganpkc/sonic-brief-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lmcguiganpkc/sonic-brief-2/issues"
+  },
+  "homepage": "https://github.com/lmcguiganpkc/sonic-brief-2#readme"
+}
