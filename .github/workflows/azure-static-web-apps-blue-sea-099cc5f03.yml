@@ -31,11 +31,12 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies and build (frontend_app)
+      - name: Install patch-package globally, then dependencies and build (frontend_app)
         working-directory: frontend_app
         run: |
-          npm install --legacy-peer-deps
-          npm run build
+              npm install -g patch-package
+              npm install --legacy-peer-deps
+
           
       - name: List contents of dist folder
         run: ls -R frontend_app/build
