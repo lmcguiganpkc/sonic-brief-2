@@ -29,12 +29,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install dependencies and build (frontend_app)
         working-directory: frontend_app
         run: |
           npm install --legacy-peer-deps
+          npm install patch package
           npm run build
           
       - name: List contents of dist folder
