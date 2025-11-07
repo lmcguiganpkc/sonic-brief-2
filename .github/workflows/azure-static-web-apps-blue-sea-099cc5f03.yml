@@ -35,7 +35,6 @@ jobs:
         working-directory: frontend_app
         run: |
           npm install --legacy-peer-deps
-          npm install patch package
           npm run build
           
       - name: List contents of dist folder
