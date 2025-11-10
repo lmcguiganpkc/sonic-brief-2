@@ -125,3 +125,5 @@ infra/terraform.rc
 infra/terraform.tfvars
 infra/terraform.tfvars.json
 infra/*_credentials.tfvars
+backend.zip
+backend_app/.env
